@@ -31,7 +31,7 @@ a {
 body {
   background-color: #000022;
   color: rgb(196, 195, 195);
-  font-family: cursive;
+  /* font-family: cursive; */
 }
 .title-container {
   margin-top: 2rem;
@@ -58,17 +58,20 @@ hr {
     -5.97px -5.02px 2.75px -1.37px rgba(0, 0, 0, 0.6);
   display: flex;
   flex-direction: column;
-  align-items: center;
+
   justify-content: center;
   font-size: 3rem;
+  padding: 1rem;
 }
 .from {
   background: linear-gradient(30deg, hsl(240, 100%, 17%), white);
   margin-right: 0.5rem;
+  align-items: flex-start;
 }
 .to {
   background: linear-gradient(150deg, white, hsl(240, 100%, 17%));
   margin-left: 0.5rem;
+  align-items: flex-end;
 }
 .card-container {
   display: flex;
@@ -84,20 +87,31 @@ hr {
   align-items: center;
   color: #601ba9;
   font-size: 1.4rem;
-  height: 3rem;
-  width: 3rem;
+  height: 4rem;
+  width: 4rem;
+  margin-top: 7rem;
+  position: absolute;
+  z-index: 1;
+  background-color: #000022;
+  border-radius: 2rem;
+}
+.exchange-bg {
+  position: absolute;
+  height: 80%;
+  width: 80%;
+  /* background-color: red; */
+  z-index: -1;
   background: rgb(196, 195, 195);
   border-radius: 2rem;
-  z-index: 1;
-  position: absolute;
-  margin-top: 7rem;
+
+  /* position: absolute; */
   box-shadow: inset -1.99px -1.67px 3.66px -0.46px rgba(0, 0, 0, 0.15),
     inset 2.99px 2.51px 3.66px -0.46px rgba(0, 0, 0, 0.3),
     -5.97px -5.02px 2.75px -1.37px rgba(0, 0, 0, 0.6);
   transition: 0.3s ease-in-out;
 }
-.exchange:hover {
-  background: rgb(211, 210, 210);
+.exchange-bg:hover {
+  background: rgb(235, 233, 233);
 }
 .measurements {
   display: flex;
@@ -126,4 +140,36 @@ hr {
   width: 1px;
   background-image: linear-gradient(to bottom, white, rgb(196, 196, 196));
   border-radius: 10px;
+}
+
+@media screen and (width < 769px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .from,
+  .to {
+    width: 80vw;
+    height: 20vh;
+    margin: 0;
+    font-size: 1.8rem;
+  }
+  .from {
+    margin-bottom: 0.5rem;
+  }
+  .to {
+    margin-top: 0.5rem;
+    margin-bottom: -3rem;
+    background: linear-gradient(30deg, hsl(240, 100%, 17%), white);
+    align-items: flex-start;
+  }
+  h1 {
+    font-size: 1.4rem;
+    margin-top: -0.3rem;
+  }
+  .exchange {
+    margin: 0;
+    margin-top: 3rem;
+    margin-left: 10rem;
+  }
 }

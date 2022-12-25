@@ -21,6 +21,7 @@ export default function App() {
           <div className="from">2PAPER</div>
           <div className="exchange">
             <CgArrowsExchangeAlt />
+            <div className="exchange-bg"></div>
           </div>
           <div className="to">29.7CM</div>
         </div>

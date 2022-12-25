@@ -60,3 +60,15 @@ body {
     transform: translateX(95%);
   }
 }
+
+@media screen and (width < 769px) {
+  .bg2 {
+    height: 50vh;
+    width: 80vw;
+  }
+
+  .bg3 {
+    height: 20vh;
+    width: 20vw;
+  }
+}
