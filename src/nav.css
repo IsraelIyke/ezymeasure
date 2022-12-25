@@ -1,0 +1,12 @@
+nav {
+  display: flex;
+  height: 2rem;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(187, 189, 186, 0.336);
+  width: 100vw;
+  color: rgb(196, 195, 195);
+  font-size: 0.9rem;
+}
