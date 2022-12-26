@@ -1,5 +1,6 @@
 import Bg from "./components/bg";
 import Nav from "./components/nav";
+import { MdDelete } from "react-icons/md";
 import { CgArrowsExchangeAlt, CgArrowsExchangeV } from "react-icons/cg";
 import "./App.css";
 import "./bg.css";
@@ -30,13 +31,13 @@ export default function App() {
           <h3>Saved measurements</h3>
           <ul>
             <li>
-              table height: <span>20cm</span>
+              table height: <span>20cm</span> <MdDelete />
             </li>
             <li>
-              door: <span>900mm</span>
+              door: <span>900mm</span> <MdDelete />
             </li>
             <li>
-              wire length: <span>1.2m</span>
+              wire length: <span>1.2m</span> <MdDelete />
             </li>
             {/* <li>
               wire length: <span>1.2m</span>
