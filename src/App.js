@@ -1,6 +1,6 @@
 import Bg from "./components/bg";
 import Nav from "./components/nav";
-import { CgArrowsExchangeAlt } from "react-icons/cg";
+import { CgArrowsExchangeAlt, CgArrowsExchangeV } from "react-icons/cg";
 import "./App.css";
 import "./bg.css";
 import "./nav.css";
@@ -20,7 +20,8 @@ export default function App() {
         <div className="card-container">
           <div className="from">2PAPER</div>
           <div className="exchange">
-            <CgArrowsExchangeAlt />
+            <CgArrowsExchangeAlt className="arrows-up" />
+            <CgArrowsExchangeV className="arrows-down" />
             <div className="exchange-bg"></div>
           </div>
           <div className="to">29.7CM</div>
