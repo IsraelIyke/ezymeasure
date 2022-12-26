@@ -1,16 +1,16 @@
 /* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  } */
 
 html,
 body {
@@ -18,6 +18,8 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  flex-shrink: 0;
+  height: 100px;
 }
 
 a {
@@ -58,10 +60,32 @@ hr {
     -5.97px -5.02px 2.75px -1.37px rgba(0, 0, 0, 0.6);
   display: flex;
   flex-direction: column;
-
   justify-content: center;
-  font-size: 3rem;
+  align-items: center;
+  font-size: 2rem;
   padding: 1rem;
+}
+.from input,
+.to input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 3rem;
+  width: 98%;
+  position: relative;
+}
+.to input {
+  text-align: right;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 .from {
   background: linear-gradient(30deg, hsl(240, 100%, 17%), white);
@@ -162,6 +186,7 @@ hr {
   }
   .from {
     margin-bottom: 0.5rem;
+    background: linear-gradient(150deg, hsl(240, 100%, 17%), white);
   }
   .to {
     margin-top: 0.5rem;
@@ -175,7 +200,7 @@ hr {
   }
   .exchange {
     margin: 0;
-    margin-top: 3vh;
+    margin-top: 4vh;
     margin-left: 40vw;
   }
   .arrows-up {
@@ -186,5 +211,8 @@ hr {
   }
   .measurements {
     width: 85vw;
+  }
+  .to input {
+    text-align: left;
   }
 }
