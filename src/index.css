@@ -144,11 +144,13 @@ input[type="number"] {
   align-items: center;
   width: 50vw;
   justify-content: center;
-  height: 150px;
+  height: 165px;
   overflow-y: auto;
+  margin-bottom: -3rem;
+  margin-top: 2rem;
 }
 .measurements h3 {
-  padding-top: 2rem;
+  /* padding-top: 2rem; */
 }
 
 .measurements::-webkit-scrollbar {
