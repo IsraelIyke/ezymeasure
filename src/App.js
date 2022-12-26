@@ -13,9 +13,6 @@ export default function App() {
 
   return (
     <div className="main-container">
-      <div>
-        <Nav />
-      </div>
       <Bg />
       <div className="container">
         <div className="title-container">
@@ -79,6 +76,9 @@ export default function App() {
             </li> */}
           </ul>
         </div>
+      </div>
+      <div>
+        <Nav />
       </div>
     </div>
   );

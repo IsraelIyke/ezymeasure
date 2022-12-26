@@ -33,7 +33,7 @@ a {
 body {
   background-color: #000022;
   color: rgb(196, 195, 195);
-  /* font-family: cursive; */
+  position: relative;
 }
 .title-container {
   margin-top: 2rem;
@@ -75,6 +75,7 @@ hr {
   width: 98%;
   position: relative;
 }
+
 .to input {
   text-align: right;
 }
@@ -143,7 +144,7 @@ input[type="number"] {
   align-items: center;
   width: 50vw;
   justify-content: center;
-  height: 32vh;
+  height: 150px;
   overflow-y: auto;
 }
 .measurements h3 {
@@ -180,7 +181,7 @@ input[type="number"] {
   .from,
   .to {
     width: 80vw;
-    height: 20vh;
+    height: 135px;
     margin: 0;
     font-size: 1.8rem;
   }

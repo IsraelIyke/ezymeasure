@@ -1,12 +1,18 @@
 nav {
   display: flex;
-  height: 2rem;
+  height: 32px;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  bottom: 0;
+  position: absolute;
+  margin-top: calc(0.054 * 100%);
   background-color: rgba(187, 189, 186, 0.336);
   width: 100vw;
   color: rgb(196, 195, 195);
   font-size: 0.9rem;
+}
+
+@media screen and (width < 769px) {
+  nav {
+    margin-top: calc(0.27 * 100%);
+  }
 }
